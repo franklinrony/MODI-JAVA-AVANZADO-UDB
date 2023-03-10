@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean id="factura1" class="udb.net.mod1.di.spring.Factura">
+		<property name="monto" value="878"></property>
+		<property name="detalleFactura">
+			<list>
+				<ref bean="detalleFactura1" />
+				<ref bean="detalleFactura2" />
+			</list>
+		</property>
+	</bean>
+	<bean id="cliente" class="udb.net.mod1.di.spring.Cliente">
+		<property name="nombre" value="jose"></property>
+		<property name="factura" ref="factura1"></property>
+	</bean>
+	<bean id="detalleFactura1"
+		class="udb.net.mod1.di.spring.DetalleFactura">
+		<property name="concepto" value="Mueble" />
+		<property name="cantidad" value="10" />
+		<property name="montoUnitario" value="25.50"></property>
+	</bean>
+	<bean id="detalleFactura2" class="udb.net.mod1.di.spring.DetalleFactura">
+		<property name="concepto" value="Impresor" />
+		<property name="cantidad" value="5" />
+		<property name="montoUnitario" value="50.50" />
+	</bean>
+</beans>
