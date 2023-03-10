@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean id="estudiante1" class="udb.net.mod1.regacad.EstudianteCep">
+		<property name="nombre" value="Carlos"></property>
+		<property name="apellido" value="rosales"></property>
+		<property name="cum" value="8.21"></property>
+		<property name="cuotaMensual" value="65.00"></property>
+	</bean>
+	<bean id="estudiante2" class="udb.net.mod1.regacad.EstudianteColP">
+	<property name="nombre" value="Jose"></property>
+		<property name="apellido" value="Perez"></property>
+		<property name="cum" value="9.21"></property>
+		<property name="cuotaMensual" value="75.00"></property>
+	</bean>
+</beans>

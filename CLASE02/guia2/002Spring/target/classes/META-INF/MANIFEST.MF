@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Built-By: Franklin Rony Cortez
+Build-Jdk: 17.0.6
+Implementation-Title: Modern Java RPC stack using Jetty+Jersey+Jackson+M
+ essagePack (from https://github.com/making/msgpack-rpc-jersey-blank)
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: 01
+Implementation-Vendor: Pivotal Software, Inc.
+Main-Class: Spring.App
+Created-By: Maven Integration for Eclipse
+
