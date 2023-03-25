@@ -15,8 +15,8 @@ public class PrincipalTransaction {
 		@SuppressWarnings("resource")
 		AnnotationConfigApplicationContext contexto=new AnnotationConfigApplicationContext(ConfigurandoSpring.class);
 		Bookservice bs=contexto.getBean(Bookservice.class);
-		bs.insertarVarios(new Book(5, "El Extranjero", "Albert Camus", "Dramaturgo", 20), 
-				new Book(6, "Don Quijote", "Miguel de Cervantes", "Novela", 10));
+		bs.insertarVarios(new Book(6, "El Extranjero", "Albert Camus", "Dramaturgo", 20), 
+				new Book(7, "Don Quijote", "Miguel de Cervantes", "Novela", 10));
 		System.out.println("Registros insertados con exito");
 		List<Book> lista=bs.findAll();
 		
